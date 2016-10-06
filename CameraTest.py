@@ -2,8 +2,6 @@ import cv2
 
 camera = cv2.VideoCapture(0)
 
-print "hello"
-
 if camera.isOpened() == True:
     ret = camera.read()
     if ret[0] == True:
