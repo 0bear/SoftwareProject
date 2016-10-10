@@ -4,7 +4,7 @@ import cv2
 cap = cv2.VideoCapture(0)
 
 # Define the codec and create VideoWriter object
-#fourcc = cv2.cv.CV_FOURCC(*'DIVX')
+fourcc = cv2.cv.CV_FOURCC(*'MPEG')
 #out = cv2.VideoWriter('output.avi',fourcc, 20.0, (640,480))
 out = cv2.VideoWriter('output.mp4', -1, 20.0, (640,480))
 
@@ -17,7 +17,7 @@ while(cap.isOpened()):
         out.write(frame)
 
         cv2.imshow('frame',frame)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        if cv2.waitKey(50) & 0xFF == ord('q'):
             break
     else:
         break
