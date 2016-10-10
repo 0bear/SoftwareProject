@@ -13,7 +13,7 @@ while(camera.isOpened):
             frame = cv2.flip(frame,0)
             out.write(frame)
 
-            cv2.imshow('frame',frame)
+            # cv2.imshow('frame',frame)
             if cv2.waitkey(1) & 0xFF ==ord('q'):
                 break
 
