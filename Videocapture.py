@@ -17,11 +17,12 @@ while(camera.isOpened):
             print 'frame wrote'
 
             # cv2.imshow('frame',frame)
-            repeat()
             if cv2.waitKey(1) & 0xFF == ord('q'):
+                print 'wating for input'
                 break
 
         else:
+            print 'why am i here?'
             break
 
 camera.release()
