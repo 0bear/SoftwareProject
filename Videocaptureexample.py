@@ -4,7 +4,7 @@ import cv2
 cap = cv2.VideoCapture(0)
 
 # Define the codec and create VideoWriter object
-fourcc = CV_FOURCC('P', 'I', 'M', '1')
+fourcc = cv2.cv.CV_FOURCC(*'DIVX')
 #out = cv2.VideoWriter('output.avi',fourcc, 20.0, (640,480))
 out = cv2.VideoWriter('output.mp4', fourcc, 20.0, (640,480))
 
