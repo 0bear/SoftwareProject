@@ -1,6 +1,9 @@
 import cv2
 import numpy as np
 
+# frame per second = 15
+# resolution = 1024*768
+
 camera = cv2.VideoCapture(0)
 out = cv2.VideoWriter('Output.mp4', -1, 15.0, (1024,768))
 
