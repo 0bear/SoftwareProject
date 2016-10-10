@@ -8,9 +8,9 @@ camera = cv2.VideoCapture(0)
 out = cv2.VideoWriter('Output.mp4', -1, 15.0, (1024,768))
 
 while(camera.isOpened):
-        print 'camera is opened'
+        # print 'camera is opened'
         ret, frame = camera.read()
-        print 'camera read'
+        # print 'camera read'
         if ret == True:
             frame = cv2.flip(frame,0)
             out.write(frame)
