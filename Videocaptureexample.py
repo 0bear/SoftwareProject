@@ -6,7 +6,7 @@ cap = cv2.VideoCapture(0)
 # Define the codec and create VideoWriter object
 #fourcc = cv2.cv.CV_FOURCC(*'DIVX')
 #out = cv2.VideoWriter('output.avi',fourcc, 20.0, (640,480))
-out = cv2.VideoWriter('output.avi', -1, 20.0, (640,480))
+out = cv2.VideoWriter('output.mp4', -1, 20.0, (640,480))
 
 while(cap.isOpened()):
     ret, frame = cap.read()
