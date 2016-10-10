@@ -9,7 +9,7 @@ out = cv2.VideoWriter('Output.mp4', -1, 15.0, (1024,768))
 
 while(camera.isOpened):
         ret, frame = camera.read()
-        if ret[0] == True:
+        if ret == True:
             frame = cv2.flip(frame,0)
             out.write(frame)
 
