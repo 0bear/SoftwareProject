@@ -9,10 +9,8 @@ while(camera.isOpened()):
     ret = camera.read()
 
     if ret[0] == True:
-        frame = cv2.flip(frame,0)
-        cv2.imshow('Webcam',frame)
-        cv2.imwrite("test_" + str(num) + ".jpg", ret[1])
-
+        saveimage = cv2.resize(ret[1],(320 ,240))
+        cv2.imwrite("test_" + str(num) + ".jpg", saveimage)
         num = num + 1
 
 # Wait 100ms for key input. If q is pressed, break.
