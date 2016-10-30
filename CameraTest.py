@@ -8,3 +8,6 @@ if camera.isOpened() == True:
         cv2.imwrite("test.jpg", ret[1])
         camera.release()
         cv2.destroyAllWindows()
+        
+elif camera.isOpened() == False:
+    print('camera is not opened')
